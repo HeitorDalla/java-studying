@@ -17,6 +17,7 @@ public class Main {
             System.out.println("0 - Sair");
 
             opcao = scanner.nextInt();
+            scanner.nextLine();
 
             if (opcao != 0) {
                 configuracao(opcao, animal, medico);
@@ -30,15 +31,25 @@ public class Main {
 
         switch (opcao) {
             case 1:
+                // Validação antes de agendar
+                if (animal.nome_animal == null || medico.nome_medico == null) {
+                    System.out.println("Antes de agendar, cadastre um animal ou um médico!");
+                    break;
+                }
+
                 System.out.println("Qual o dia voce deseja fazer a consulta? ");
                 String dia = scanner.nextLine();
 
                 System.out.println("Qual animal voce deseja ver? ");
                 String nome_animal_ver = scanner.nextLine();
 
-                /* vai ter que ter uma validacao para ver se ja existe cadastro de animal e cadastro de médico */
-                
-                
+                // Validação se o animal ja foi cadastrado
+                if (!nome_animal_ver.equalsIgnoreCase(animal.nome_animal)) {
+                    System.out.println("Esse animal não esta cadastrado!");
+                } else {
+                    System.out.println("Agendamento feito.");
+                }
+
                 break;
             case 2:
                 System.out.println("Qual vai ser o nome do animal? ");
