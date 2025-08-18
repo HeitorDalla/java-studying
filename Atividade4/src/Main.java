@@ -33,7 +33,7 @@ public class Main {
             if (opcao != 0) {
                 realizarMovimentacao(opcao, conta);
             }
-        } while (opcao != 0);       
+        } while (opcao != 0); 
     }
 
     public static void realizarMovimentacao (int opcao, Conta conta) {
