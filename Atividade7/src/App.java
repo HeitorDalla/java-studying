@@ -1,5 +1,4 @@
 import br.edu.unicesumar.classes.Cliente;
-import br.edu.unicesumar.classes.PessoaFisica;
 import br.edu.unicesumar.classes.PessoaJuridica;
 
 public class App {
