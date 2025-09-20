@@ -4,11 +4,13 @@ import java.util.Scanner;
 
 public class User {
 
+    // VARIÁVEIS PRIVADAS
     private String firstName;
     private String lastName;
     private int age;
 
-    public User () {}
+    // CONSTRUTOR VAZIO
+    public User (){}
 
     public User(String firstName, String lastName, int age){
         this.firstName = firstName;
@@ -40,19 +42,19 @@ public class User {
         this.age = age;
     }
 
-    public void cadastrarUser() throws Exception{
-
-        Scanner s = new Scanner(System.in);
-
+    public void cadastrarUser(Scanner s){
         System.out.println("Informe o nome do usuário:");
         this.firstName = s.nextLine();
+
         System.out.println("Informe o sobrenome do usuário:");
         this.lastName = s.nextLine();
+        
         System.out.println("Informe a idade do usuário:");
         this.age = s.nextInt();
+
+        s.nextLine();
     }
 
-    @Override
     public String toString(){
         return this.firstName + " "
             + this.lastName + " - " 

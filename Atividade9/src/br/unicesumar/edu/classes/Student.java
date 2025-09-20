@@ -8,10 +8,7 @@ public class Student extends User {
 
     public Student(){}
 
-    public Student (String firstName, 
-                    String lastName, 
-                    int age, 
-                    String academicRegister){
+    public Student (String firstName, String lastName, int age, String academicRegister){
         super(firstName, lastName, age);
         this.academicRegister = academicRegister;
     }
@@ -25,16 +22,18 @@ public class Student extends User {
     }
 
     @Override
-    public void cadastrarUser() throws Exception{
-        Scanner s = new Scanner(System.in);
-
+    public void cadastrarUser(Scanner s){
         System.out.println("Informe o nome do usuário:");
         setFirstName(s.nextLine());
+
         System.out.println("Informe o sobrenome do usuário:");
         setLastName(s.nextLine());
+
         System.out.println("Informe a idade do usuário:");
         setAge(s.nextInt());
+        
         s.nextLine();
+
         System.out.println("Informe o RA do usuário:");
         this.academicRegister = s.nextLine();
     }
