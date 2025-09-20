@@ -37,8 +37,8 @@ public class Funcionario {
         this.salario = this.salario + valor;
     }
 
-    public double ganhoAnual() {
-        return this.salario * 12;
+    public String ganhoAnual() {
+        return "O ganho anual desse funcionário é: " + (this.salario * 12);
     }
 
     public String exibeDados () {

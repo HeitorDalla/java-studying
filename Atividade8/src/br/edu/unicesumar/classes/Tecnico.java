@@ -23,7 +23,7 @@ public class Tecnico extends Assistente {
     }
 
     @Override
-    public double ganhoAnual() {
-        return (getSalario() * 12) + this.bonusSalarial;
+    public String ganhoAnual() {
+        return "O seu ganho anual é: " + (getSalario() * 12) + this.bonusSalarial;
     }
 }

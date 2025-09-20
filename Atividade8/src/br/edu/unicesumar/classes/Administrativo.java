@@ -6,8 +6,8 @@ public class Administrativo extends Assistente {
 
     public Administrativo () {}
 
-    public Administrativo (String nome, double salario, boolean noturno, double adicionalNoturno) {
-        super(nome, salario, matricula)
+    public Administrativo (String nome, double salario, String matricula, boolean noturno, double adicionalNoturno) {
+        super(nome, salario, matricula);
         this.noturno = noturno;
         this.adicionalNoturno = adicionalNoturno;
     }
