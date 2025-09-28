@@ -59,10 +59,3 @@ Se quiser sugerir novos exercícios ou melhorias:
    git commit -m "Adiciona exercício sobre arrays"
    ```
 4. Envie o **pull request**.  
-
----
-
-## 📄 Licença
-
-Este repositório está sob a licença **MIT**.  
-Sinta-se à vontade para usar e modificar.  
