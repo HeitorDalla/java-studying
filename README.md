@@ -1,18 +1,68 @@
-## Getting Started
+# 🟨 Exercícios em Java
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Este repositório contém uma coleção de exercícios em **Java**, organizados níveis de dificuldade.  
+O objetivo é praticar a linguagem e consolidar conceitos fundamentais de programação orientada a objetos.
 
-## Folder Structure
+---
 
-The workspace contains two folders by default, where:
+## 🚀 Como Executar os Exercícios
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+1. Certifique-se de ter o **Java JDK** instalado (versão 11+ recomendada).  
+   Para verificar:
+   ```bash
+   java -version
+   javac -version
+   ```
+2. Clone este repositório:
+   ```bash
+   https://github.com/HeitorDalla/java-studying.git
+   ```
+3. Acesse a pasta desejada:
+   ```bash
+   cd nome_pasta
+   ```
+4. Compile e execute o arquivo:
+   ```bash
+   javac nome_arquivo.java
+   java nome_arquivo
+   ```
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+---
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## 📌 Objetivos de Aprendizado
 
-## Dependency Management
+- Praticar **lógica de programação** em Java.  
+- Consolidar o uso de **POO (Programação Orientada a Objetos)**.  
+- Entender o funcionamento de **coleções e estruturas de dados**.  
+- Criar uma base de estudos organizada para revisões futuras.  
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+---
+
+## 📚 Recursos Recomendados
+
+- [Documentação Oficial do Java](https://docs.oracle.com/en/java/)  
+- [W3Schools Java Tutorial](https://www.w3schools.com/java/)  
+- [GeeksforGeeks - Java](https://www.geeksforgeeks.org/java/)  
+
+---
+
+## 📝 Contribuição
+
+Se quiser sugerir novos exercícios ou melhorias:  
+1. Faça um **fork** do projeto.  
+2. Crie uma **branch** para sua feature:
+   ```bash
+   git checkout -b nova-feature
+   ```
+3. Faça o **commit** das alterações:
+   ```bash
+   git commit -m "Adiciona exercício sobre arrays"
+   ```
+4. Envie o **pull request**.  
+
+---
+
+## 📄 Licença
+
+Este repositório está sob a licença **MIT**.  
+Sinta-se à vontade para usar e modificar.  
