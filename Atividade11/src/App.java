@@ -5,5 +5,6 @@ import br.edu.unicesumar.classes.Gerente;
 public class App {
     public static void main(String[] args) throws Exception {
         Funcionario funcionario = new Gerente();
+        funcionario.bonificacao();
     }
 }
