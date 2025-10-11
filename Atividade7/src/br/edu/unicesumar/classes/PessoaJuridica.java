@@ -31,6 +31,7 @@ public class PessoaJuridica extends Cliente {
     }
 
     // SOBRESCREVER MÉTODO DE IMPRESSAO DE DADOS (POLIMORFISMO)
+    @Override
     public String imprimirDados () {
         return super.imprimirDados() + '\n' + 
                 "CNPJ: " + this.cnpj + '\n' + 

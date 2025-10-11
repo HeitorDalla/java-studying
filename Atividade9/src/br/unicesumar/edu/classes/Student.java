@@ -23,18 +23,18 @@ public class Student extends User {
 
     @Override
     public void cadastrarUser(Scanner s){
-        System.out.println("Informe o nome do usuário:");
+        System.out.println("Informe o nome do estudante:");
         setFirstName(s.nextLine());
 
-        System.out.println("Informe o sobrenome do usuário:");
+        System.out.println("Informe o sobrenome do estudante:");
         setLastName(s.nextLine());
 
-        System.out.println("Informe a idade do usuário:");
+        System.out.println("Informe a idade do estudante:");
         setAge(s.nextInt());
         
         s.nextLine();
 
-        System.out.println("Informe o RA do usuário:");
+        System.out.println("Informe o RA do estudante:");
         this.academicRegister = s.nextLine();
     }
 

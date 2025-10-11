@@ -7,6 +7,9 @@ public class User {
     private String password;
     private String name;
 
+    //CONSTRUTOR VAZIO
+    public User(){}
+
     //CONSTRUTOR COM TODAS AS INFORMAÇÕES
     public User(String email, String password, String name){
         this.email = email;
@@ -14,15 +17,11 @@ public class User {
         this.name = name;
     }
 
-    //CONSTRUTOR VAZIO
-    public User(){}
-    
     //DISPONIBILIZAÇÃO DO ATRIBUTO
     public String getEmail () {
         return this.email;
     }
 
-    //INSERÇÃO DE VALORES PARA O ATRIBUTO
     public void setEmail (String email) {
         this.email = email;
     }
