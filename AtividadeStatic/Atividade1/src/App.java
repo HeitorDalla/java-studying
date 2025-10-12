@@ -22,7 +22,7 @@ public class App {
 
         Carro c2 = new Carro();
         c2.nome = "Jaguar";
-        c2.price = 80000;
+        c2.price = 80000; // errado - não posso relacionar ao objeto, e sim, com a classe
         c2.limiteVelocidade = 150;
         Carro.limiteVelocidade = 150; // esta sobreescrevendo pois é o delimitador comum
         
