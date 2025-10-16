@@ -20,7 +20,7 @@ public abstract class Conta {
         this.numeroConta = numeroConta;
     }
 
-    // MÉTODO ABSTRATO - OBRIGA AS CLASSES FILHAS IMPLEMENTAREM A LOÓGICA, 
+    // MÉTODO ABSTRATO - OBRIGA AS CLASSES FILHAS IMPLEMENTAREM A LÓGICA, 
     // POIS É DIFERENTE PARA CADA TIPO
     public abstract void sacar ();
 }

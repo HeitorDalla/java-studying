@@ -41,8 +41,6 @@ public class App {
         // c1.limiteVelocidade = 120; // errado - não posso relacionar ao objeto, e sim, com a classe
         // Carro.limiteVelocidade = 120;
 
-        Class.forName("Carro");
-
-        
+        Class.forName("Carro"); 
     }
 }
