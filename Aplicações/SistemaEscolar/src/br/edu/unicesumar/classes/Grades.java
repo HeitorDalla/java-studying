@@ -17,8 +17,8 @@ public class Grades {
     }
 
     // adicionar notas à lista
-    public void addGrade (double nota) { //receber a entrada da nota
-        this.gradesList.add(nota);
+    public void addGrade (double grade) { //receber a entrada da nota
+        this.gradesList.add(grade);
     }
 
     // calcular a média das notas

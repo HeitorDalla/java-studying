@@ -4,7 +4,9 @@ public class Aluno extends Pessoa {
     private String ra;
     private Grades notasDoAluno; //objeto que vai armazenar o objeto de Grades
 
-    public Aluno () {}
+    public Aluno () {
+        this.notasDoAluno = new Grades();
+    }
 
     public Aluno (String nome, int idade, String ra) {
         super(nome, idade);
