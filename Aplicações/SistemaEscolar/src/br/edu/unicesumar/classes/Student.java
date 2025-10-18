@@ -1,14 +1,14 @@
 package br.edu.unicesumar.classes;
 
-public class Aluno extends Pessoa {
+public class Student extends Pessoa {
     private String ra;
     private Grades notasDoAluno; //objeto que vai armazenar o objeto de Grades
 
-    public Aluno () {
+    public Student () {
         this.notasDoAluno = new Grades();
     }
 
-    public Aluno (String nome, int idade, String ra) {
+    public Student (String nome, int idade, String ra) {
         super(nome, idade);
         this.ra = ra;
 

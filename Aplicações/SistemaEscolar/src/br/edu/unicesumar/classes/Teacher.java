@@ -1,11 +1,11 @@
 package br.edu.unicesumar.classes;
 
-public class Professora extends Pessoa {
+public class Teacher extends Pessoa {
     private String cargaHoraria;
 
-    public Professora () {}
+    public Teacher () {}
 
-    public Professora (String nome, int idade, String cargaHoraria) {
+    public Teacher (String nome, int idade, String cargaHoraria) {
         super(nome, idade);
         this.cargaHoraria = cargaHoraria;
     }
@@ -24,7 +24,7 @@ public class Professora extends Pessoa {
     }
 
     // método para avaliar a média
-    public void evaluateStudent (Aluno aluno) {
+    public void evaluateStudent (Student aluno) {
         double mediaAluno = aluno.getAverage();
 
         if (mediaAluno < 6) {

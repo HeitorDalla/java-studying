@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
-import br.edu.unicesumar.classes.Aluno;
-import br.edu.unicesumar.classes.Professora;
+import br.edu.unicesumar.classes.Student;
+import br.edu.unicesumar.classes.Teacher;
 
 public class Main {
     public static void main(String[] args) throws Exception {
@@ -15,7 +15,7 @@ public class Main {
         System.out.println("Digite sua idade: ");
         int idade = sc.nextInt();
 
-        Aluno aluno = new Aluno();
+        Student aluno = new Student();
         aluno.setNome(nome);
         aluno.setIdade(idade);
 
@@ -26,18 +26,18 @@ public class Main {
 
         for (int i = 0; i < quantidadeNotas; i++) {
             System.out.println("Digite sua nota: ");
-            int nota = sc.nextInt();
+            double nota = sc.nextDouble();
 
             aluno.addGrade(nota);
         }
 
-        Professora professora = new Professora();
+        Teacher professora = new Teacher();
         professora.setNome("Larissa");
         professora.setIdade(70);
 
         professora.evaluateStudent(aluno);
         
 
-        System.out.println("No momento, tem: " + Aluno.getCount() + " objetos instanciados");
+        System.out.println("No momento, tem: " + Student.getCount() + " objetos instanciados");
     }
 }
