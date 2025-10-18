@@ -36,7 +36,8 @@ public class Main {
         professora.setIdade(70);
 
         professora.evaluateStudent(aluno);
-        
+
+        sc.close();        
 
         System.out.println("No momento, tem: " + Student.getCount() + " objetos instanciados");
     }
