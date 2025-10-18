@@ -22,4 +22,15 @@ public class Professora extends Pessoa {
     public String showInfo () {
         return "Nome: " + getNome() + ", Idade: " + getIdade() + ", Carga horaria: " + getCargaHoraria();
     }
+
+    // método para avaliar a média
+    public void evaluateStudent (Aluno aluno) {
+        double mediaAluno = aluno.getAverage();
+
+        if (mediaAluno < 6) {
+            System.out.println("O aluno: " + aluno.getNome() + " foi REPROVADO com média de: " + mediaAluno);
+        } else {
+            System.out.println("O aluno: " + aluno.getNome() + " foi APROVADO com média de: " + mediaAluno);
+        }
+    }
 }

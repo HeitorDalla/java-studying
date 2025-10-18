@@ -6,9 +6,7 @@ import java.util.List;
 public class Grades {
     private List<Double> gradesList;
 
-    public Grades () {}
-
-    public Grades (int numeroNotas) {
+    public Grades () {
         // Cria uma nova instancia vazia quando o objeto Grades é instanciado
         this.gradesList = new ArrayList<>();
     }
@@ -19,8 +17,8 @@ public class Grades {
     }
 
     // adicionar notas à lista
-    public void addGrade (double grade) { //receber a entrada da nota
-        this.gradesList.add(grade);
+    public void addGrade (double nota) { //receber a entrada da nota
+        this.gradesList.add(nota);
     }
 
     // calcular a média das notas
