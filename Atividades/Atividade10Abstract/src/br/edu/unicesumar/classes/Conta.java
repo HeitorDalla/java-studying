@@ -20,7 +20,12 @@ public abstract class Conta {
         this.numeroConta = numeroConta;
     }
 
-    // MÉTODO ABSTRATO - OBRIGA AS CLASSES FILHAS IMPLEMENTAREM A LÓGICA, 
+    // MÉTODO ABSTRATO - ESTOU DANDO APENAS A IDEIA ABSTRATA, MAS NÃO IMPLEMENTANDO
+    // OBRIGA AS CLASSES FILHAS IMPLEMENTAREM A LÓGICA, 
     // POIS É DIFERENTE PARA CADA TIPO
+    // OU SEJA, TODA CLASSE QUE EXTENDA A CLASSE DE 'Conta', TEM QUE POSSUIR O MÉTODO 'sacar'
+    // NÃO É POSSIVEL CRIAR UM OBJETO DE UMA CLASSE ABSTRATA
     public abstract void sacar ();
+
+    public abstract void depositar();
 }

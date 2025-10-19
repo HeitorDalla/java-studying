@@ -1,12 +1,15 @@
 package br.edu.unicesumar.classes;
 
-public class Poupanca extends Conta {
+public abstract class Poupanca extends Conta {
     // CONSTRUTOR
     public Poupanca () {};
 
     public Poupanca (int numeroConta) {
         super(numeroConta);
     }
+
+    // SE A CLASSE FILHA A UMA CLASSE ABSTRACT NAO HERDAR TODOS OS MÉTODOS ABSTRATOS DA CLASSE PAI, ELE DEVE SER ABSTRATO TAMBEM
+    // MAS AI ELE NAO PODE SER INSTANCIADO, SENDO NECESSARIO CRIAR UMA OUTRA CLASSE, A 'ACAO'
 
     // MÉTODOS
     @Override
