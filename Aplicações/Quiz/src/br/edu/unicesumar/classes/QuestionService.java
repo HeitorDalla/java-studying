@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class QuestionService {
     Question[] questions = new Question[5];
-    String selections[] = new String[5]; 
+    String[] selections = new String[5];
 
     public QuestionService () {
         questions[0] = new Question(1, "size of int", "2", "6", "4", "8", "4");
@@ -43,8 +43,8 @@ public class QuestionService {
         int score = 0;
 
         for (int i = 0; i < questions.length; i++) {
-            Question que = questions[i];
-            String actualAnswer = que.getAnswer();
+            Question question = questions[i];
+            String actualAnswer = question.getAnswer();
             String userAnswer = selections[i];
 
             if (actualAnswer.equals(userAnswer)) {
