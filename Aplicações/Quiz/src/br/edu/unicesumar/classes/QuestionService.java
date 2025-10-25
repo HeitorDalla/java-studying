@@ -1,7 +1,10 @@
 package br.edu.unicesumar.classes;
 
+import java.util.Scanner;
+
 public class QuestionService {
     Question[] questions = new Question[5];
+    String selections[] = new String[5]; 
 
     public QuestionService () {
         questions[0] = new Question(1, "size of int", "2", "6", "4", "8", "4");
@@ -11,9 +14,44 @@ public class QuestionService {
         questions[4] = new Question(5, "size of int", "2", "6", "4", "8", "4");
     }
 
-    public void displayQuestions () {
+    public void playQuiz () {
+        int i = 0;
+
         for (Question question : questions) {
-            System.out.println(question.toString());
+            Scanner sc = new Scanner(System.in);
+
+            System.out.println("Numero da questão: " + question.getId());
+            System.out.println("Pergunta: " + question.getQuestion());
+            System.out.println("Opcao 1: " + question.getOpt1());
+            System.out.println("Opcao 2: " + question.getOpt2());
+            System.out.println("Opcao 3: " + question.getOpt3());
+            System.out.println("Opcao 4: " + question.getOpt4());
+
+            System.out.println("Qual vai ser a sua resposta? ");
+            selections[i] = sc.nextLine();
+
+            i ++;
         }
+
+        System.out.println("As suas respostas das perguntas são: \n");
+        for (String selection : selections) {
+            System.out.println(selection);
+        }
+    }
+
+    public void printScore () {
+        int score = 0;
+
+        for (int i = 0; i < questions.length; i++) {
+            Question que = questions[i];
+            String actualAnswer = que.getAnswer();
+            String userAnswer = selections[i];
+
+            if (actualAnswer.equals(userAnswer)) {
+                score ++;
+            }
+        }
+
+        System.out.println("O seu score é: " + score);
     }
 }
