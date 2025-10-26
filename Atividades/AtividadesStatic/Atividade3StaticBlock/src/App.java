@@ -22,7 +22,7 @@ class Carro {
         System.out.println(obj.nome + obj.price + limiteVelocidade); // não posso usar variavies não estaticas dentro de um metodo estatico, apenas variaveis estaticas
     }
 
-    // toda vez que o programa compilar, o método estatico ira ser executado, apenas uma vez
+    // toda vez que o programa compilar, o método estatico ira ser executado apenas uma vez
     // se tiver um objeto em instancia, ele (metodo estatico) vira primeiro que qualquer um
     // caso nao tenha nenhum objeto instanciado, ele pode chamar o método estatico 'forName' para carregar uma classe dinamicamente em tempo de execução
     static {
